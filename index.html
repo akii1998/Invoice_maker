@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Invoice Maker</title>
+  </head>
+  <body>
+    <h1>Invoice Maker</h1>
+    <fieldset>
+      <form>
+        <label for="name">Product Name</label>
+        <input type="text" placeholder="Enter the product name" id="name" />
+        <label for="price">Product Price</label>
+        <input type="number" placeholder="Enter the product price" id="price" />
+        <label for="quantity">Product Quantity</label>
+        <input
+          type="number"
+          placeholder="Enter the product quantity"
+          id="quantity"
+        />
+        <button id="addItem">Add Item</button>
+      </form>
+    </fieldset>
+    <br /><br />
+
+    <table id="display">
+      <caption>
+        Invoice Summary
+      </caption>
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <th>Product Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="data_body">
+
+      </tbody>
+    </table>
+   
+    <button onclick="printList()">print</button>
+    <h1>For print invoice summary "click on print" Button</h1>
+    <script src="./index.js"></script>
+  </body>
+</html>
